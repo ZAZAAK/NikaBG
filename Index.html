@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,18 +14,16 @@
             font-family: 'Arial', sans-serif;
             color: #fff;
             text-align: center;
-            padding: 50px;
+            margin: 0;
             background-blend-mode: overlay;
             background-color: rgba(0, 0, 0, 0.7);
-            margin: 0;
             animation: fadeInBackground 1s ease-in-out;
         }
 
         h1 {
             font-size: 3.5em;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-            animation: fadeInText 2s ease-in-out;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
         }
 
         .social-buttons {
@@ -33,12 +32,10 @@
             justify-content: center;
             gap: 20px;
             padding: 20px 0;
-            animation: slideUp 1s ease-in-out;
         }
 
         .social-button-container {
             text-align: center;
-            animation: fadeInUp 2s ease-in-out;
         }
 
         .button {
@@ -52,29 +49,11 @@
             overflow: hidden;
             border: 2px solid transparent;
             transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-            opacity: 0;
-            animation: fadeInButton 1s forwards;
-        }
-
-        .button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: left 0.3s;
-        }
-
-        .button:hover::before {
-            left: 100%;
         }
 
         .button:hover {
             transform: scale(1.1);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-            border: 2px solid #fff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
         }
 
         .button.tw { background: linear-gradient(45deg, #1da1f2, #0077b5); }
@@ -87,7 +66,6 @@
             font-size: 1em;
             margin-top: 5px;
             color: #ddd;
-            animation: fadeInUp 1.5s ease-in-out;
         }
 
         iframe {
@@ -96,9 +74,8 @@
             height: 450px;
             border: none;
             border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
             margin-top: 20px;
-            animation: fadeInIframe 2s ease-in-out;
         }
 
         img {
@@ -106,26 +83,19 @@
             width: 150px;
             height: 150px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            animation: fadeInImage 1s ease-in-out;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
         }
 
         .footer-text {
             font-size: 1.2em;
             color: #ddd;
             margin-top: 30px;
-            animation: fadeIn 3s ease-in-out infinite alternate;
-        }
-
-        .staff-section {
-            animation: fadeInUp 2s ease-in-out;
         }
 
         .staff-section table {
             width: 80%;
             margin: 30px auto;
             border-collapse: collapse;
-            animation: fadeInTable 2s ease-in-out;
         }
 
         .staff-section th, .staff-section td {
@@ -151,116 +121,24 @@
             font-weight: bold;
         }
 
-        .staff-section tr:hover {
-            background-color: #555;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0.8; }
-            to { opacity: 1; }
-        }
-
-        @keyframes fadeInText {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
         @keyframes fadeInBackground {
             from { opacity: 0; }
             to { opacity: 1; }
         }
 
-        @keyframes fadeInButton {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes fadeInUp {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes fadeInIframe {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes fadeInImage {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes fadeInTable {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Mobile Friendly Styles */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
-            }
-
-            .social-buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .button {
-                font-size: 1em;
-                padding: 12px 25px;
-            }
-
-            .footer-text {
-                font-size: 1em;
-            }
-
-            iframe {
-                height: 300px;
-            }
-
-            img {
-                width: 120px;
-                height: 120px;
-            }
-
-            .staff-section table {
-                width: 90%;
-            }
-
-            .staff-section th, .staff-section td {
-                font-size: 1em;
-                padding: 10px;
-            }
+            h1 { font-size: 2.5em; }
+            iframe { height: 300px; }
+            img { width: 120px; height: 120px; }
+            .footer-text { font-size: 1em; }
+            .staff-section table { width: 90%; }
         }
 
-        /* Extra Large Mobile Devices */
         @media (max-width: 500px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            .button {
-                padding: 10px 20px;
-                font-size: 0.9em;
-            }
-
-            iframe {
-                height: 250px;
-            }
-
-            img {
-                width: 100px;
-                height: 100px;
-            }
-
-            .footer-text {
-                font-size: 0.9em;
-            }
-
-            .staff-section table {
-                width: 100%;
-            }
+            h1 { font-size: 2em; }
+            iframe { height: 250px; }
+            img { width: 100px; height: 100px; }
+            .footer-text { font-size: 0.9em; }
         }
     </style>
 </head>
@@ -280,14 +158,12 @@
         <div class="social-button-container">
             <a href="https://www.youtube.com/@Nikarogachov/videos" class="button youtube">YouTube</a>
             <p class="social-info">Subscribers: 1.92k</p>
-            <p class="social-info"></p>
         </div>
         <div class="social-button-container">
             <a href="https://www.tiktok.com/@nika_bg?_t=8odk2TUn7Rq&amp;_r=1" class="button tiktok">TikTok</a>
             <p class="social-info">Followers: 100</p>
         </div>
-        <div class="social-button-container" style="display: flex; align-items: center;">
-            <img src="RightSide.png" alt="Right Side Image" style="max-width: 100px; margin-right: 20px;">
+        <div class="social-button-container">
             <a href="https://discord.gg/34bEyS9s" class="button discord">Discord</a>
             <p class="social-info">Members: 418</p>
         </div>
@@ -295,10 +171,6 @@
     <div class="featured-section">
         <h2>Featured Video</h2>
         <iframe src="https://www.youtube.com/embed/N7dPu8dgIwU?rel=0" allowfullscreen=""></iframe>
-        <div class="video-stats">
-            <p>6 Likes</p>
-            <p>70 Views</p>
-        </div>
     </div>
     <div class="staff-section">
         <h2>Discord Server Staff</h2>
@@ -311,13 +183,13 @@
                 </tr>
                 <tr class="discord-staff">
                     <td><img src="https://via.placeholder.com/100" alt="Owner Photo"></td>
-                    <td>Owner</td>
-                    <td>John Doe</td>
+                    <td>e</td>
+                    <td>e</td>
                 </tr>
                 <tr>
                     <td><img src="https://via.placeholder.com/100" alt="Admin Photo"></td>
-                    <td>Admin</td>
-                    <td>Jane Smith</td>
+                    <td>e</td>
+                    <td>e</td>
                 </tr>
             </tbody>
         </table>
