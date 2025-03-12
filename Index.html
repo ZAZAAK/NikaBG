@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nika BG</title>
+    <link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+<nav>
+    <div class="logo">Nika BG</div>
+    <ul>
+        <li><a href="#home">🏠 Home</a></li>
+        <li><a href="#team">👥 Team</a></li>
+        <li><a href="#contact">📩 Contact</a></li>
+    </ul>
+</nav>
+
+  <!-- Home Section -->
+<section id="home" class="section">
+    <img src="https://yt3.googleusercontent.com/DV74d__eBiFtrIu9W4zkS0P3lyiWC6fAQSQhVdr4W3JHiF1a1leOqsWcQn5Q_EHdiGL5w1BbBg=s160-c-k-c0x00ffffff-no-rj" 
+         alt="Profile Picture" class="profile-img">
+    <h1 class="glow-text-blue">Nika BG</h1>
+    <p class="footer-text">BlockmanGo ID: 1002655</p>
+
+    <div class="social-buttons">
+        <a href="https://x.com/BgaNika51001" class="button tw">Twitter</a>
+        <a href="https://t.me/nika_BGA" class="button telegram">Telegram</a>
+        <a href="https://www.youtube.com/@Nikarogachov/videos" class="button youtube">YouTube</a>
+        <a href="https://www.tiktok.com/@nika_bg" class="button tiktok">TikTok</a>
+        <a href="https://discord.gg/34bEyS9s" class="button discord">Discord</a>
+    </div>
+</section>
+
+<!-- Clickable Giveaway Box -->
+<a href="https://discord.gg/5dWjm6Rv5V" target="_blank" class="giveaway-box">
+    <div class="gc-container">
+        <span class="number-text">300</span>
+        <span class="gc-text">
+            <img src="https://play-lh.googleusercontent.com/f3z5Lcf_JI-Ux58hGCR-KlFxAvMTGjzftny59yvCdarulH33J6nDBCpVgymVqTKzUso" 
+                 alt="GCcube Logo" class="gc-logo">
+            GCcube
+        </span>
+    </div>
+    <p class="giveaway-text">🎉 JOIN GIVEAWAY NOW! 🎉</p>
+    <p class="winner-text">ONE WINNER</p>
+</a>
+
+
+
+
+</div>
+
+<!-- Team Section -->
+<section id="team" class="section">
+    <h2 class="glow-text">🚀 Team</h2>
+    
+    <div class="team-container">
+        <!-- Nika BG -->
+        <div class="team-card" onclick="openModal('nika')">
+            <img src="https://cdn.discordapp.com/avatars/1320695884270538792/f71f2e1e706c6581d2a675eef9bebe05.png" alt="Pfp">
+            <h3>Nika BG</h3>
+            <p>🌟 Owner</p>
+        </div>
+
+        <!-- Legendery -->
+        <div class="team-card" onclick="openModal('legendery')">
+            <img src="https://cdn.discordapp.com/avatars/1204117273292308531/d1262d2ee51584e40f1d4cbd6fda6bed.png" alt="Pfp">
+            <h3>Legendery</h3>
+            <p>🌟 Co-Owner</p>
+        </div>
+
+        <!-- Shah BG -->
+        <div class="team-card" onclick="openModal('shahbg')">
+            <img src="https://cdn.discordapp.com/avatars/790155636615807029/e85a26f47b5428ae78bc4980262e33e5.png" alt="Pfp">
+            <h3>Shah BG</h3>
+            <p>👮 Admin</p>
+        </div>
+ <!-- sazaki -->
+        <div class="team-card" onclick="openModal('shahbg')">
+            <img src="https://images-ext-1.discordapp.net/external/VOQQOy0oXvugdG8u35uTn5PjqU2jVj7sMS6x4QmRsqQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1204109683011620904/208e28e84f0c36acf7de352643c5961e.png?format=webp&quality=lossless" alt="Pfp">
+            <h3>Sazaki</h3>
+            <p>☕ Co Owner</p>
+        </div>
+    </div>
+</section>
+
+<!-- Modals for Each Team Member -->
+<div id="nika-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('nika')">&times;</span>
+        <img class="modal-img" src="https://cdn.discordapp.com/avatars/1320695884270538792/f71f2e1e706c6581d2a675eef9bebe05.png" alt="Nika BG">
+        <h2>Nika BG</h2>
+        <p>🌟 Owner of the community. A passionate gamer and leader.</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/channel/UCIVtaXV1bSfnrWs3Pmb87hw" target="_blank">📹 Youtube</a>
+            <a href="https://discord.gg/SWMFR2Vk9R" target="_blank">💬 Discord</a>
+        </div>
+    </div>
+</div>
+
+<div id="legendery-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('legendery')">&times;</span>
+        <img class="modal-img" src="https://cdn.discordapp.com/avatars/1204117273292308531/d1262d2ee51584e40f1d4cbd6fda6bed.png" alt="Legendery">
+        <h2>Legendery</h2>
+        <p>🌟 Co-Owner. Always ready to support and lead the team.</p>
+        <div class="social-links">
+        </div>
+    </div>
+</div>
+
+<div id="shahbg-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('shahbg')">&times;</span>
+        <img class="modal-img" src="https://cdn.discordapp.com/avatars/790155636615807029/e85a26f47b5428ae78bc4980262e33e5.png" alt="Shah BG">
+        <h2>Shah BG</h2>
+        <p>👮 CEO, managing the community and keeping things in order.</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/channel/UCrAAxRjUFykXZRmXBfTax3Q" target="_blank">📹 Youtube</a>
+        </div>
+    </div>
+</div>
+
+<div id="Sazaki-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('sazaki')">&times;</span>
+        <img class="modal-img" src="https://cdn.discordapp.com/avatars/790155636615807029/e85a26f47b5428ae78bc4980262e33e5.png" alt="Shah BG">
+        <h2>Shah BG</h2>
+        <p>👮 CEO, managing the community and keeping things in order.</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/channel/UCqvm820RSbiWfQWFWrYWL3A" target="_blank">📹 Youtube</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="spacer"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="glow-text">Contact</h2>
+        <div class="contact-box">
+            <p>Want to contact <strong>Nika BG?</strong></p>
+            <p>Join our official <a href="https://discord.gg/34bEyS9s" class="discord-btn">Discord Server</a> now!</p>
+        </div>
+    </section>
+
+  <!-- Footer -->
+<footer class="footer">
+    <p>🚀 Made with ❤️ by <span class="ishaan">Ishaan</span> | 📺 <a href="https://www.youtube.com/@Era-BGofficial" class="footer-link">Support on YouTube</a> | © <span id="year"></span> All rights reserved.</p>
+</footer>
+
+
+<!-- JavaScript to Auto-Update Year -->
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+</body>
+</html>
