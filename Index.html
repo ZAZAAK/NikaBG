@@ -1,171 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nika BG</title>
-    <link rel="stylesheet" href="Styles.css">
-<script src="Script.js"></script>
-<link rel="icon" href="https://cdn.discordapp.com/avatars/1320695884270538792/f71f2e1e706c6581d2a675eef9bebe05.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nika BG — Maintenance</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nika BG — Maintenance" />
+  <meta property="og:description" content="Sorry, we are currently down for maintenance." />
+  <meta property="og:image" content="https://i.ytimg.com/vi/ARGvnpaUUhY/oar2.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="https://cdn.discordapp.com/avatars/1320695884270538792/f71f2e1e706c6581d2a675eef9bebe05.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(1200px 600px at top, #111827, #020617);
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .glow {
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(circle, rgba(56,189,248,0.15), transparent 60%);
+      filter: blur(120px);
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(2, 6, 23, 0.75);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 40px 30px;
+      max-width: 420px;
+      width: 90%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.15);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .grad {
+      background: linear-gradient(90deg, #38bdf8, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      background: linear-gradient(90deg, #38bdf8, #6366f1);
+      color: #020617;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 30px rgba(56,189,248,0.35);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(99,102,241,0.45);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 18px;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+  </style>
 </head>
 <body>
+  <div class="glow"></div>
 
-   <!-- Navigation Bar -->
-<nav>
-    <div class="logo">Nika BG</div>
-    <ul>
-        <li><a href="#home">🏠 Home</a></li>
-        <li><a href="#team">👥 Team</a></li>
-        <li><a href="#contact">📩 Contact</a></li>
-    </ul>
-</nav>
+  <div class="card">
+    <img
+      src="https://yt3.googleusercontent.com/DV74d__eBiFtrIu9W4zkS0P3lyiWC6fAQSQhVdr4W3JHiF1a1leOqsWcQn5Q_EHdiGL5w1BbBg=s160-c-k-c0x00ffffff-no-rj"
+      alt="Nika BG"
+      class="avatar"
+    />
 
-  <!-- Home Section -->
-<section id="home" class="section">
-    <img src="https://yt3.googleusercontent.com/DV74d__eBiFtrIu9W4zkS0P3lyiWC6fAQSQhVdr4W3JHiF1a1leOqsWcQn5Q_EHdiGL5w1BbBg=s160-c-k-c0x00ffffff-no-rj" 
-         alt="Profile Picture" class="profile-img">
-    <h1 class="glow-text-blue">Nika BG</h1>
-    <p class="footer-text">BlockmanGo ID: 1002655</p>
+    <h1>🚧 <span class="grad">We’re Temporarily Down</span></h1>
+    <p>
+      Sorry! The <strong>Nika BG</strong> website is currently under maintenance.<br>
+      We’ll be back very soon with new updates 🚀
+    </p>
 
-    <div class="social-buttons">
-        <a href="https://x.com/BgaNika51001" class="button tw">Twitter</a>
-        <a href="https://t.me/nika_BGA" class="button telegram">Telegram</a>
-        <a href="https://www.youtube.com/@Nikarogachov/videos" class="button youtube">YouTube</a>
-        <a href="https://www.tiktok.com/@nika_bg" class="button tiktok">TikTok</a>
-        <a href="https://discord.gg/34bEyS9s" class="button discord">Discord</a>
-    </div>
-</section>
+    <a href="https://discord.gg/34bEyS9s" target="_blank" rel="noopener" class="btn">
+      Join Discord for Updates
+    </a>
+  </div>
 
-<!-- Clickable Giveaway Box -->
-<a href="https://discord.gg/5dWjm6Rv5V" target="_blank" class="giveaway-box">
-    <div class="gc-container">
-        <span class="number-text">300</span>
-        <span class="gc-text">
-            <img src="https://play-lh.googleusercontent.com/f3z5Lcf_JI-Ux58hGCR-KlFxAvMTGjzftny59yvCdarulH33J6nDBCpVgymVqTKzUso" 
-                 alt="GCcube Logo" class="gc-logo">
-            GCcube
-        </span>
-    </div>
-    <p class="giveaway-text">🎉 JOIN GIVEAWAY NOW! 🎉</p>
-    <p class="winner-text">ONE WINNER</p>
-</a>
+  <footer>
+    © <span id="year"></span> Nika BG • Made by Ishaan
+  </footer>
 
-
-
-
-</div>
-
-<!-- Team Section -->
-<section id="team" class="section">
-    <h2 class="glow-text">🚀 Team</h2>
-    
-    <div class="team-container">
-        <!-- Nika BG -->
-        <div class="team-card" onclick="openModal('nika')">
-            <img src="https://cdn.discordapp.com/avatars/1320695884270538792/f71f2e1e706c6581d2a675eef9bebe05.png" alt="Pfp">
-            <h3>Nika BG</h3>
-            <p>🌟 Owner</p>
-        </div>
-
-        <!-- Legendery -->
-        <div class="team-card" onclick="openModal('legendery')">
-            <img src="https://cdn.discordapp.com/avatars/1204117273292308531/d1262d2ee51584e40f1d4cbd6fda6bed.png" alt="Pfp">
-            <h3>Legendery</h3>
-            <p>🌟 Co-Owner</p>
-        </div>
-
-        <!-- Shah BG -->
-        <div class="team-card" onclick="openModal('shahbg')">
-            <img src="https://cdn.discordapp.com/avatars/790155636615807029/e85a26f47b5428ae78bc4980262e33e5.png" alt="Pfp">
-            <h3>Shah BG</h3>
-            <p>👮 CEO</p>
-        </div>
-<div id="sazaki-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('sazaki')">&times;</span>
-        <img class="modal-img" src="https://images-ext-1.discordapp.net/external/VOQQOy0oXvugdG8u35uTn5PjqU2jVj7sMS6x4QmRsqQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1204109683011620904/208e28e84f0c36acf7de352643c5961e.png?format=webp&quality=lossless" alt="Sazaki">
-        <h2>Sazaki</h2>
-        <p>☕ Co-Owner, managing the community and keeping things in order.</p>
-        <div class="social-links">
-            <a href="https://www.youtube.com/channel/UCqvm820RSbiWfQWFWrYWL3A" target="_blank">📹 Youtube</a>
-        </div>
-    </div>
-</div>
-
-</section>
-
-<!-- Modals for Each Team Member -->
-<div id="nika-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('nika')">&times;</span>
-        <img class="modal-img" src="https://cdn.discordapp.com/avatars/1320695884270538792/f71f2e1e706c6581d2a675eef9bebe05.png" alt="Nika BG">
-        <h2>Nika BG</h2>
-        <p>🌟 Owner of the community. A passionate gamer and leader.</p>
-        <div class="social-links">
-            <a href="https://www.youtube.com/channel/UCIVtaXV1bSfnrWs3Pmb87hw" target="_blank">📹 Youtube</a>
-            <a href="https://discord.gg/SWMFR2Vk9R" target="_blank">💬 Discord</a>
-        </div>
-    </div>
-</div>
-
-<div id="legendery-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('legendery')">&times;</span>
-        <img class="modal-img" src="https://cdn.discordapp.com/avatars/1204117273292308531/d1262d2ee51584e40f1d4cbd6fda6bed.png" alt="Legendery">
-        <h2>Legendery</h2>
-        <p>🌟 Co-Owner. Always ready to support and lead the team.</p>
-        <div class="social-links">
-        </div>
-    </div>
-</div>
-
-<div id="shahbg-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('shahbg')">&times;</span>
-        <img class="modal-img" src="https://cdn.discordapp.com/avatars/790155636615807029/e85a26f47b5428ae78bc4980262e33e5.png" alt="Shah BG">
-        <h2>Shah BG</h2>
-        <p>👮 CEO, managing the community and keeping things in order.</p>
-        <div class="social-links">
-            <a href="https://www.youtube.com/channel/UCrAAxRjUFykXZRmXBfTax3Q" target="_blank">📹 Youtube</a>
-        </div>
-    </div>
-</div>
-
-<div id="sazaki-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('sazaki')">&times;</span>
-        <img class="modal-img" src="https://cdn.discordapp.com/avatars/790155636615807029/e85a26f47b5428ae78bc4980262e33e5.png" alt="sazaki">
-        <h2>Sazaki</h2>
-        <p>👮 Co-Owner , managing the community and keeping things in order.</p>
-        <div class="social-links">
-            <a href="https://www.youtube.com/channel/UCqvm820RSbiWfQWFWrYWL3A" target="_blank">📹 Youtube</a>
-        </div>
-    </div>
-</div>
-
-
-<div class="spacer"></div>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2 class="glow-text">Contact</h2>
-        <div class="contact-box">
-            <p>Want to contact <strong>Nika BG?</strong></p>
-            <p>Join our official <a href="https://discord.gg/34bEyS9s" class="discord-btn">Discord Server</a> now!</p>
-        </div>
-    </section>
-
-  <!-- Footer -->
-<footer class="footer">
-    <p>🚀 Made with ❤️ by <span class="ishaan">Ishaan</span> | 📺 <a href="https://www.youtube.com/@Era-BGofficial" class="footer-link">Support on YouTube</a> | © <span id="year"></span> All rights reserved.</p>
-</footer>
-
-
-<!-- JavaScript to Auto-Update Year -->
-<script>
+  <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-
+  </script>
 </body>
 </html>
